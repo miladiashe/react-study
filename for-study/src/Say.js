@@ -20,7 +20,7 @@ const Say = () => {
             </button>
             <button style={{color: 'blue'}} onClick={() => setColor('blue')}>
                 파란색
-            </button>
+           </button>
         </div>
     )
 }
