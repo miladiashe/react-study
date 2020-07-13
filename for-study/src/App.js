@@ -1,9 +1,9 @@
 import React from 'react';
-import EventPractice from "./EventPractice";
+import IterationSample from "./IterationSample";
 
 function App() {
   return (
-    <EventPractice />
+    <IterationSample />
   );
 }
 
