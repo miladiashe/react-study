@@ -14,7 +14,15 @@ class MyClassComponent extends Component{
                 <h1>{number}</h1>
                 <h2>(안바뀜){fixed}</h2>
                 <button onClick={() => {
-                    this.setState({number: number + 1});
+                    this.setState(prevState =>{
+                        return {
+                            number: prevState.number + 1
+                        };
+                        }, () => {
+                    console.log('테스트');
+                    console.log(this.state);
+                    }
+                );
                 }}
                 >+1
                 </button>
